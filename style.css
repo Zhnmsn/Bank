@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #1B1A1B;
+    color: #FFFFFF;
+}
+
+.banner::after {
+    display: block;
+    position: relative;
+    height: 800px;
+    content: url("banner.png");
+    left: 630px;
+    top: 120px;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding-left: 24px;
+    top:  -60px;
+    left: 180px;
+    
+}
+
+.logo-small {
+    display: block; 
+    position: absolute;
+    padding-left: 270px;
+    top: 200px;
+    font-size: 22px;
+    
+}

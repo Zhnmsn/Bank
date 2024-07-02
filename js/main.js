@@ -33,14 +33,12 @@ const allPrice = allPricePersonalComputer + allPriceLaptop + allPriceScreen;
 console.log('Общая стоимость товара:', allPrice, '$');
 
 
-
 const userItemName = prompt('Введите наименование товара');
-console.log(typeof userItemName);
-const userAmountItem = Number(prompt('Введите количество товара'));
-console.log(typeof userAmountItem);
-const userСCategoryItem = prompt('Введите категорию товара');
-console.log(typeof userСCategoryItem);
-const userPriceItem = Number(prompt('Введите цену товара'));
-console.log(typeof userPriceItem);
+const userAmountItem = prompt('Введите количество товара');
+const userPriceItem = prompt('Введите цену товара');
 
-console.log('На складе',  userAmountItem, 'едениц товара', userItemName, 'общей стоимостью', userAmountItem*userPriceItem, '$' );
+if(!isNaN(userAmountItem) && !isNaN(userPriceItem)) {
+    console.log('На складе',  userAmountItem, 'едениц товара', userItemName, 'общей стоимостью', userAmountItem*userPriceItem, '$'); }
+    else { alert('Вы ввели некорректные данные')}
+    
+

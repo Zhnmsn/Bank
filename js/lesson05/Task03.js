@@ -1,9 +1,9 @@
 "use strict"
 
 const reverceStr = (str) => {
-    let splitStr = str.split('');
-    let reverseStr = splitStr.reverse();
-    let newStr = reverseStr.join('');
+    const splitStr = str.split('');
+    const reverseStr = splitStr.reverse();
+    const newStr = reverseStr.join('');
     console.log(newStr);
 }            
 

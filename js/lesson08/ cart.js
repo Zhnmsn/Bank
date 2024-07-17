@@ -2,8 +2,8 @@
 
 const cart = {
     items : [],
-    totalPrice : 0,
-    count : 0,
+    totalPrice : 10,
+    count : 22220,
 
     print() {
         const obj = JSON.stringify(this.items);
@@ -19,11 +19,6 @@ const cart = {
     increaseCount(number) {
         this.count += number;
         return this.count;
-    },
-
-    getTotalPrice() {
-        this.totalPrice = this.calculateItemPrice();
-        return this.totalPrice;
     },
 
     add(item, priceOfItem, countOfItem) {
@@ -44,16 +39,7 @@ const cart = {
 } 
     
     
-cart.add('item1', 100, 7);
-cart.add('item1', 200, 4);
-cart.add('item1', 50, 12);
 
 
-console.log(cart.print() + `\n` + cart.getTotalPrice()); 
-
-
-
-
-    
 
 
